@@ -49,6 +49,19 @@ export default [
     component: './TableList',
   },
   {
+    name: 'React',
+    icon: 'table',
+    path: '/react',
+    routes: [
+      {
+        path: '/react/hooks',
+        name: 'hooks',
+        icon: 'smile',
+        component: './react/hooks',
+      },
+    ],
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },
