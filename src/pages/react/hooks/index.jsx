@@ -10,7 +10,6 @@ const Demo = () => {
   useEffect(async () => {
     const names = await getNames()
     console.log(111, names)
-
   })
 
   return (
