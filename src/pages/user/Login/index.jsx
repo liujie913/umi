@@ -112,6 +112,7 @@ const Login = () => {
                   id: 'pages.login.username.placeholder',
                   defaultMessage: '用户名: admin or user',
                 })}
+                initialValue={'admin'}
                 rules={[
                   {
                     required: true,
@@ -134,6 +135,7 @@ const Login = () => {
                   id: 'pages.login.password.placeholder',
                   defaultMessage: '密码: 123456',
                 })}
+                initialValue={'123456'}
                 rules={[
                   {
                     required: true,
