@@ -79,7 +79,11 @@ const handleRemove = async (selectedRows) => {
   }
 };
 
-const TableList = () => {
+const TableList = (props) => {
+  useEffect(() =>{
+    console.log(222222, history.location.query)
+    console.log(props.location.query)
+  })
   /**
    * @en-US Pop-up window of new window
    * @zh-CN 新建窗口的弹窗
@@ -239,6 +243,13 @@ const TableList = () => {
   ];
   return (
     <PageContainer>
+      <Button
+        onClick={() => {
+          history.goBack();
+        }}
+      >
+        返回
+      </Button>
       <ProTable
         headerTitle={intl.formatMessage({
           id: 'pages.searchTable.title',

@@ -62,6 +62,12 @@ export default [
     ],
   },
   {
+    name: 'Api',
+    icon: 'table',
+    path: '/api-demo',
+    component: './api',
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },
