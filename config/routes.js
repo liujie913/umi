@@ -52,6 +52,7 @@ export default [
     name: 'React',
     icon: 'table',
     path: '/react',
+    access: 'table',
     routes: [
       {
         path: '/react/hooks',
